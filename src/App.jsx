@@ -6,14 +6,14 @@ function App() {
   const { currentTemp, systemStatus, setTemperature, upperThreshold, lowerThreshold } = useStore();
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col items-center py-12 px-4 gap-8 font-sans">
+    <div className="min-h-screen bg-slate-500 flex flex-col items-center py-12 px-4 gap-8 font-sans">
       <h1 className="text-4xl font-bold text-slate-800 tracking-wide">
         Cold-Chain Command
       </h1>
 
       <div className="flex flex-col lg:flex-row gap-8 w-full max-w-5xl">
         {/* The KPI Card (We made it adapt to the new layout) */}
-        <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-xl text-center w-full lg:w-1/3 flex flex-col justify-center">
+        <div className="bg-cyan p-8 rounded-2xl border border-slate-200 shadow-xl text-center w-full lg:w-1/3 flex flex-col justify-center">
           <h2 className="text-sm mb-2 text-slate-400 font-medium tracking-wider uppercase">Live Temperature</h2>
           <p className={`text-6xl font-mono font-bold tracking-tighter transition-colors duration-300 ${
             systemStatus === 'Critical' ? 'text-red-500' : 'text-emerald-400'
