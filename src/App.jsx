@@ -1,6 +1,6 @@
 import { useStore } from './store/useStore';
 // IMPORT THE NEW CHART
-import TemperatureChart from './components/TemperatureChart';
+import TemperatureChart from '../components/TemperatureChart';
 
 function App() {
   const { currentTemp, systemStatus, setTemperature, upperThreshold, lowerThreshold } = useStore();
