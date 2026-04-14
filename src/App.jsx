@@ -1,6 +1,7 @@
 import { useStore } from './store/useStore';
 // IMPORT THE NEW CHART
 import TemperatureChart from './components/TemperatureChart';
+import AlertLog from './components/AlertLog';
 
 function App() {
   const { currentTemp, systemStatus, setTemperature, upperThreshold, lowerThreshold } = useStore();
@@ -8,7 +9,7 @@ function App() {
   return (
     <div className="min-h-screen bg-slate-500 flex flex-col items-center py-12 px-4 gap-8 font-sans">
       <h1 className="text-4xl font-bold text-slate-800 tracking-wide">
-        Cold-Chain Command
+        Cold-Chain Centre
       </h1>
 
       <div className="flex flex-col lg:flex-row gap-8 w-full max-w-5xl">
@@ -37,6 +38,11 @@ function App() {
            <TemperatureChart />
         </div>
       </div>
+{/* 2. The New Alert Log placed beneath everything */}
+      <div className="w-full max-w-5xl">
+        <AlertLog />
+      </div>
+
     </div>
   );
 }
