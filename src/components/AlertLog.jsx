@@ -6,8 +6,8 @@ export default function AlertLog() {
   const { alerts } = useStore();
 
   return (
-    <div className="w-full bg-white p-6 rounded-2xl border border-slate-200 shadow-xl mt-8">
-      <h3 className="text-slate-500 font-medium mb-4 uppercase tracking-wider text-sm">System Incident Log</h3>
+    <div className="w-full bg-slate-800/50 backdrop-blur-sm p-6 rounded-2xl border border-slate-700 shadow-xl mt-8">
+      <h3 className="text-slate-400 font-medium mb-4 uppercase tracking-wider text-sm">System Incident Log</h3>
 
       {alerts.length === 0 ? (
         // What to show when everything is perfect
